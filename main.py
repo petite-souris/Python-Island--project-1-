@@ -2,6 +2,7 @@
 
 # Imports
 import time
+from game import game
 
 # Lecture of other files
 with open("Texts/welcome.txt", "r", encoding="utf-8") as welcome:
@@ -49,14 +50,14 @@ def main():
         reply = input()
         if reply == "o":
             # start game
-            pass
+            print(game)
         else:
             # really sure ? Save ? Bye
             pass
 
     else:
         # load a save and play
-        pass
+        print(game)
 
 if __name__ == "__main__":
     main()
