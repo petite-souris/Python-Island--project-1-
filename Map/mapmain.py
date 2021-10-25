@@ -2,7 +2,7 @@
 
 # imports
 from Player.player import *   
-from Map.mapmatrice import * 
+from Map.mapmatrice import *                # When an import is in a case, don't forget to appeal the case first and then, the file : case.file
 
 # lecture of the map
 for y in range(len(matrice)):
