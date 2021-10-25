@@ -3,7 +3,7 @@ Voici les règles de base du jeu L'île au Python.
 2 - Représenter en mode texte (console) la carte (résolution 50x30) statique qui t'as été remise avec tous les éléments indiqués (eau, plaine, arbres, rochers, les 4 endroits mystérieux).
 3 - Représenter ton avatar sur cette carte.
 4 - Déplacer l'avatar sur la carte selon 4 directions en respectant les obstacles.
-5 - Gérer le contenu de son sac à dos avec une capacité d'objets.
+5 - Gérer le contenu de son sac à dos avec une capacité d'objets (avec une capacité d'objets maximum).
 6 - Gérer une liste d'objets à trouver sur la carte, pouvoir les ramasser, les mettre dans le sac à dos ou les redéposer au sol.
 7 - Gérer l'utilité des objets.
 8 - Gérer 3 niveaux vitaux (soif, faim, fatigue) de l'avatar sur une échelle de 0 à 100. 
