@@ -1,0 +1,62 @@
+[
+    {
+        "name" : "Chef 🐒",
+        "type" : "Chef",
+        "chanceMin" : 50,
+        "chanceMax" : 80
+    },
+    {
+        "name" : "🐒 1",
+        "type" : "🐒",
+        "chanceMin" : 10,
+        "chanceMax" : 70
+    },
+    {
+        "name" : "🐒 2",
+        "type" : "🐒",
+        "chanceMin" : 10,
+        "chanceMax" : 70
+    },
+    {
+        "name" : "🐒 3",
+        "type" : "🐒",
+        "chanceMin" : 10,
+        "chanceMax" : 70
+    },
+    {
+        "name" : "🐒 4",
+        "type" : "🐒",
+        "chanceMin" : 10,
+        "chanceMax" : 70
+    },
+    {
+        "name" : "🐒 5",
+        "type" : "🐒",
+        "chanceMin" : 10,
+        "chanceMax" : 70
+    },
+    {
+        "name" : "🐒 6",
+        "type" : "🐒",
+        "chanceMin" : 10,
+        "chanceMax" : 70
+    },
+    {
+        "name" : "🐒 7",
+        "type" : "🐒",
+        "chanceMin" : 10,
+        "chanceMax" : 70
+    },
+    {
+        "name" : "🐒 8",
+        "type" : "🐒",
+        "chanceMin" : 10,
+        "chanceMax" : 70
+    },
+    {
+        "name" : "🐒 9",
+        "type" : "🐒",
+        "chanceMin" : 10,
+        "chanceMax" : 70
+    }
+]
