@@ -1,4 +1,4 @@
-player={
+player = {
     "names": " ",
     "x": 23,
     "y": 14,
