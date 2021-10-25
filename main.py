@@ -33,7 +33,7 @@ def main():
         if reply == "o":
             for line in lineR:
                 print(line)
-                time.sleep(1.0)
+                time.sleep(2.0)
             print("\nMaintenant que les règles ont été énumérées, voici le début de l'histoire !\n")
             for line in lineS:
                 print(line)
@@ -57,7 +57,7 @@ def main():
 
     else:
         # load a save and play
-        print(game)
+        pass
 
 if __name__ == "__main__":
     main()
