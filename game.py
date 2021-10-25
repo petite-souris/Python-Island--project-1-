@@ -1,12 +1,12 @@
 # code utf-8
 
 # imports
-from Map.mapmain import mapmain
-from MysteriousNumber.game import *
-from FizzBuzz.game import *
-from CaesarCode.main import *
-from Player.player import *
-from inventory import *
+# from Map.mapmain import mapmain
+# from MysteriousNumber.game import *
+# from FizzBuzz.game import *
+# from CaesarCode.main import *
+# from Player.player import *
+# from inventory import *
 # from Menu import *
 # from FinalDoor.main import *
 
@@ -24,7 +24,7 @@ def game():
         print(line)
         time.sleep(1.0)
         
-    print(mapmain)
+    # print(mapmain)
 
 
 
