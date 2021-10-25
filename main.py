@@ -4,19 +4,19 @@
 import time
 
 # Lecture of other files
-with open("Textes/bienvenue.txt", "r", encoding="utf-8") as bienvenue:
-    ligneB = bienvenue.readlines()
-with open("Textes/regles.txt", "r", encoding="utf-8") as regles:
-    ligneR = regles.readlines()
-with open("Textes/scenario.txt", "r", encoding="utf-8") as scenario:
-    ligneS = scenario.readlines()
+with open("Texts/welcome.txt", "r", encoding="utf-8") as welcome:
+    lineB = welcome.readlines()
+with open("Texts/rules.txt", "r", encoding="utf-8") as rules:
+    lineR = rules.readlines()
+with open("Texts/scenario.txt", "r", encoding="utf-8") as scenario:
+    lineS = scenario.readlines()
 
 # starting
 def main():
 
     # text of starting
-    for ligne in ligneB:
-        print(ligne)
+    for line in lineB:
+        print(line)
         time.sleep(1.0)
 
     # new player
@@ -30,17 +30,17 @@ def main():
         reply = "o"
         reply = input()
         if reply == "o":
-            for ligne in ligneR:
-                print(ligne)
+            for line in lineR:
+                print(line)
                 time.sleep(1.0)
             print("\nMaintenant que les règles ont été énumérées, voici le début de l'histoire !\n")
-            for ligne in ligneS:
-                print(ligne)
+            for line in lineS:
+                print(line)
                 time.sleep(1.0)
         else:
             # scenario
-            for ligne in ligneS:
-                print(ligne)
+            for line in lineS:
+                print(line)
                 time.sleep(1.0)
 
         # start game
