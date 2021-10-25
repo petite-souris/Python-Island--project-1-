@@ -10,14 +10,19 @@ with open("Texts/rules.txt", "r", encoding="utf-8") as rules:
     lineR = rules.readlines()
 with open("Texts/scenario.txt", "r", encoding="utf-8") as scenario:
     lineS = scenario.readlines()
+with open("Menu/optionsmenu.py", "r", encoding="utf-8") as menu:
+    lineM = menu.readlines()
 
 def starting():
-
     # text of starting
-        for line in lineB:
-            print(line)
-            time.sleep(1.0)
+    for line in lineB:
+        print(line)
+        time.sleep(1.0)
 
+    # menu
+    for line in lineM:
+        print(line)
+        time.sleep(1.0)
 
         # new player
         print("Es-tu un nouveau joueur ? \n")
