@@ -14,39 +14,57 @@ with open("Menu/optionsmenu.py", "r", encoding="utf-8") as menu:
     lineM = menu.readlines()
 
 # functions
-# text of starting
-def starting():
+def starting():                     # text of starting
     for line in lineB:
         print(line)
         time.sleep(1.0)
 
-# menu
-def print_menu():
-    for key in menu.keys():
-        print(key, '--', menu[key])
-
-def print_play():
+def print_menu():                   # menu
+    for line in lineM:
+        print(line)
+        
+def print_play():                   # option play
     print("Handle option \'Jouer\'")
 
-def print_load():
+def print_load():                   # option load
     print("Handle option \'Charger une partie\'")
 
-def print_rules():
-    print("Handle option \'Règles\'")
+def print_rules():                  # option rules
+    for line in lineR:
+        print(line)
+        time.sleep(2.0)
 
 if __name__ == '__main__':
     while True:
-        print("Voici le menu du jeu.")
+        starting()
+
+        print("Voici le menu du jeu.\n")
+        time.sleep(1.0)
         print_menu()
+
         option = ''
-        # reply of player
-        option = int(input("Entre ton choix : "))
+        option = int(input("Entre ton choix : "))                  # reply of player
 
         if option == 1:
             pass
         elif option == 2:
             pass
         elif option == 3:
-            pass
+            print_rules()
+
+            # game
+            print("Maintenant que les règles ont été développées, veux-tu commencer le jeu ?")
+            reply = "o"
+            reply = input()
+            if reply == "o":
+                # scenario
+                for line in lineS:
+                    print(line)
+                    time.sleep(1.0)
+            else:
+                # return menu
+                print("Voici le menu du jeu : ")
+                print_menu()
+
         else:
             exit()
