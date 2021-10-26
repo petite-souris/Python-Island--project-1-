@@ -13,55 +13,40 @@ with open("Texts/scenario.txt", "r", encoding="utf-8") as scenario:
 with open("Menu/optionsmenu.py", "r", encoding="utf-8") as menu:
     lineM = menu.readlines()
 
+# functions
+# text of starting
 def starting():
-    # text of starting
     for line in lineB:
         print(line)
         time.sleep(1.0)
 
-    # menu
-    for line in lineM:
-        print(line)
-        time.sleep(1.0)
+# menu
+def print_menu():
+    for key in menu.keys():
+        print(key, '--', menu[key])
 
-        # new player
-        print("Es-tu un nouveau joueur ? \n")
-        reply = input()
-        if reply != 'o' or reply != 'oui' or reply != 'O' or reply != 'OUI':
-            input("Quel est ton nom cher aventurier ? \n")
+def print_play():
+    print("Handle option \'Jouer\'")
 
-            # rules of the game
-            print("Avant de commencer le jeu, veux-tu d'abord lire les règles ?")
-            reply = "o"
-            reply = input()
-            if reply == "o":
-                for line in lineR:
-                    print(line)
-                    time.sleep(2.0)
-                print("\nMaintenant que les règles ont été énumérées, voici le début de l'histoire !\n")
-                for line in lineS:
-                    print(line)
-                    time.sleep(1.0)
-            else:
-                # scenario
-                for line in lineS:
-                    print(line)
-                    time.sleep(1.0)
+def print_load():
+    print("Handle option \'Charger une partie\'")
 
-            # start game
-            print("\nEs-tu prêt pour l'aventure petit aventurier ?\n")
-            reply = "o"
-            reply = input()
-            if reply == "o":
-                # start game
-                print(game)
-            else:
-                # really sure ? Save ? Bye
-                pass
-
-        else:
-            # load a save and play
-            pass
+def print_rules():
+    print("Handle option \'Règles\'")
 
 if __name__ == '__main__':
-    starting()
+    while True:
+        print("Voici le menu du jeu.")
+        print_menu()
+        option = ''
+        # reply of player
+        option = int(input("Entre ton choix : "))
+
+        if option == 1:
+            pass
+        elif option == 2:
+            pass
+        elif option == 3:
+            pass
+        else:
+            exit()
