@@ -65,12 +65,7 @@ if __name__ == '__main__':
                         print(line)
                         time.sleep(1.0)
                 else:
-                    # scenario
-                    for line in lineS:
-                        print(line)
-                        time.sleep(1.0)
-
-                    # game
+                    pass
                     
             else:
                 # scenario
