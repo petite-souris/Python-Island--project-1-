@@ -51,7 +51,25 @@ if __name__ == '__main__':
             reply = input()
 
             if reply != 'o' or reply != 'oui' or reply != 'O' or reply != 'OUI':
-                input("Quel est ton nom cher aventurier ? \n")
+                new_player = input("Quel est ton nom cher aventurier ? \n")
+                print(f"Bienvenue à toi {new_player} ! \n")
+
+                # rules for new player
+                print("Veux-tu les règles du jeu avant de commencer ? \n")
+                reply = "o"
+                reply = input()
+
+                if reply == "o":
+                    # scenario
+                    for line in lineS:
+                        print(line)
+                        time.sleep(1.0)
+                else:
+                    # game
+                    pass
+            else:
+                # game
+                pass
 
         elif option == 2:
             pass
@@ -73,6 +91,6 @@ if __name__ == '__main__':
                 # return menu
                 print("Voici le menu du jeu : ")
                 print_menu()
-                
+
         else:
             exit()
