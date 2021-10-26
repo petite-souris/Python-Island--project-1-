@@ -65,11 +65,20 @@ if __name__ == '__main__':
                         print(line)
                         time.sleep(1.0)
                 else:
+                    # scenario
+                    for line in lineS:
+                        print(line)
+                        time.sleep(1.0)
+
                     # game
-                    pass
+                    
             else:
+                # scenario
+                for line in lineS:
+                    print(line)
+                    time.sleep(1.0)
+
                 # game
-                pass
 
         elif option == 2:
             pass
@@ -87,6 +96,8 @@ if __name__ == '__main__':
                 for line in lineS:
                     print(line)
                     time.sleep(1.0)
+
+                # game
             else:
                 # return menu
                 print("Voici le menu du jeu : ")
