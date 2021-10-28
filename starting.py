@@ -32,7 +32,7 @@ def print_load():                   # option load
 def print_rules():                  # option rules
     for line in lineR:
         print(line)
-        time.sleep(2.0)
+        time.sleep(1.0)
 
 if __name__ == '__main__':
     while True:
@@ -82,7 +82,7 @@ if __name__ == '__main__':
             print_rules()
 
             # game
-            print("Maintenant que les règles ont été développées, veux-tu commencer le jeu ?")
+            print("\nMaintenant que les règles ont été développées, veux-tu commencer le jeu ?")
             reply = "o"
             reply = input()
 
