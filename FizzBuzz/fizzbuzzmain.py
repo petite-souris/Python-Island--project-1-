@@ -8,10 +8,12 @@ with open("FizzBuzz/script.txt", "r", encoding="utf-8") as script:
 
 # Question about the quest
 print("\nVeux-tu tenter ce défi pour obtenir la clé d'or nécessaire à l'ouverture de la porte finale ?")
-    
+
+# If reply is "no"
 reply = input()
 while reply == False:
     print("Je comprends. Je te souhaite alors une bonne aventure à toi petit aventurier ! A très vite !")
+# If reply is "yes"
 else:
     time.sleep(1.5)
     from game import gameStart
